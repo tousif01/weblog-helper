@@ -12,7 +12,7 @@ def filter_logs_by_cidr(log_file, cidr_list, output_file=None):
     """
     #ip_pattern = re.compile(r'(\d{1,3}\.){3}\d{1,3}')  # Regular expression for matching IPs
 
-    ip_pattern = re.compile(r"^(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
+    ip_pattern = re.compile(r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
                             r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
                             r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
                             r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)")

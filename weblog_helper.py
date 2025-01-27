@@ -9,7 +9,7 @@ def filter_logs_by_ip(log_file, ip_list, output_file=None):
     :param ip_list: List of IP addresses to filter
     :param output_file: Path to the output file (optional)
     """
-    ip_pattern = re.compile(r"^(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
+    ip_pattern = re.compile(r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
                             r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
                             r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)\."
                             r"(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?|0)")
